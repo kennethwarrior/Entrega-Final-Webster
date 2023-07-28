@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../pre-entregable1-Webster/manifest-flow/html"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "entregable--2"
+	}
+}
