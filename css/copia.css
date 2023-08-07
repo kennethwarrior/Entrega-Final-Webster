@@ -1,0 +1,103 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+/* iconos de bootstrap */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+body {
+    font-family: 'Oxygen', serif;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* Header */
+
+.navbar-brand {
+    margin: 0 15px 0 15px;
+    text-decoration: solid;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#programas {
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color:var(--bs-secondary);
+}
+
+/* anchors de #programas */
+a {
+   color: var(--primary-color); 
+}
+a:hover {
+    color: #8f0f0f;
+}
+a:active {
+    color: goldenrod;
+}
+
+/* SECTION HERO, */
+
+.hero__container {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.hero {
+position: relative;
+height: 100vh;
+background-color: var(--primary-color);
+overflow: hidden;
+}
+
+.hero__video {
+    position: absolute;
+    min-width: 50%;
+    min-height: 50%;
+    margin: -50% 0 0 -50%;
+    width: auto;
+    height: auto;
+    transform: translateX(-15%) translateY(-5%);
+}
+
+.hero__overlay {
+    position: absolute;
+    background-color: var(--primary-color);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.hero__scroll-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    z-index: 1;
+    color: var(--bs-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+.hero__scroll-btn:hover {
+    color: var(--bs-dark-emphasis)
+}
+
+/* section CONTENIDO */
+
+
+#rinpoche {
+    background-color: rgb(88, 88, 88);
+    padding: 40px;
+}
+#antonio {
+    background-color: rgb(44, 44, 44);
+    padding: 40px;
+}
+#flo {
+    background-color: rgb(22, 22, 22);
+    padding: 40px;
+}
