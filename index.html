@@ -18,23 +18,14 @@
 </head>
 
 <body>
-    <!-- INICIO HEADER
-    aca hay un dropdown menu que quiero que lleve a unos anchors mas abajo. 
-
-    Contenido va a llevar a una section donde pongo unos videos y/o articulos, y a la parte de programas, y quizas un carousel para imagenes
-
-    Comunidad lleve a otra pagina donde hay un formulario para suscribirse al newsletter
-
-    Consulta I Ching va a tener un script que te de un Hexagrama 
-
-    Coordina una sesion va a llevar a otro formulario donde poner tu mail y un cuadro de texto-->
+    <!-- INICIO HEADER-->
 
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex row">
             <a class="navbar-brand" href="#">
-                <img src="img/brand-logo.png" alt="manifest-logo" width="55" height="55">
+                <img src="img/brand-logo.png" alt="manifest-logo" width="88px" height="88px">
             </a>
-            <a class="navbar-brand" href="#"><strong>Manifest<i>Flow</i></strong></a>
+            <a class="navbar-brand-title" href="#"><strong>Manifest<i>Flow</i></strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -52,59 +43,59 @@
                             <a class="dropdown-item" href="#arte">Galeria de Arte</a>
                         </div>
                     </li>
-                    <a class="nav-item nav-link" href="#">Comunidad</a>
+                    <a class="nav-item nav-link" href="#">Nuestra Comunidad</a>
                     <a class="nav-item nav-link" href="https://youtu.be/RXU_if6qnH4">Consulta I Ching</a>
-                    <a class="nav-item nav-link active" href="#">Coordina una sesion</a>
+                    <button type="button" class="boton__sesion btn btn-dark align-middle">Coordina una sesion</button>
                 </div>
         </nav>
     </header>
-    <!-- FINAL HEADER -->
 
-    <!-- Esta section es lo que quiero que los usuarios vean al llegar al index
-    me parecio copada la idea y quise probarla, puede que para la siguiente entrega lo cambie -->
-    <section class="hero">
-        <div class="hero__overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" loading="lazy"
-            class="hero__video">
+    <!-- FINAL HEADER -->
+    <!-- INICIO PORTADA -->
+
+    <section class="portada">
+
+        <video autoplay muted playsinline loop class="portada__video w-auto">
             <source src="img/video (2160p).mp4" type="video/mp4">
         </video>
+        <div class="portada__overlay"></div>
+        <div class="portada__container h-100 position-relative">
 
-        <div class="hero__container h-100 position-relative">
-
-            <div class="d-flex h-100 align-items-center hero__content-width">
-                <div class="text-dark-emphasis">
-                    <h1 class="hero__heading fs-2 text fw-bolder">El Arte Simple</h1>
-                    <p class="lead mb-4">Descubre con nosotros la naturaleza humana a traves del movimiento y la
+            <div class="d-flex h-100 align-items-center portada__content-width">
+                <div class="portada__heading">
+                    <h1 class="fs-1 text text-light fw-bold mb-4">El Arte Simple</h1>
+                    <p class="text-light lead mb-4">Descubre con nosotros la naturaleza humana a traves del movimiento y
+                        la
                         contemplacion</p>
-                    <a href="#programas" class="mt-2 btn btn-lg btn-outline-dark" role="button">
-                        Comenzar
-                    </a>
+                    <a href="#programas" class="mt-2 btn btn-lg btn-outline-light" role="button">
+                        Comenzar</a>
                 </div>
+
             </div>
         </div>
 
-        <a href="#scroll-down" class="hero__scroll-btn">
+        <a href="#scroll-down" class="portada__scroll-btn text-light">
             Explorar <i class="bi bi-arrow-down-short"></i>
         </a>
 
     </section>
 
+    <!-- FINAL PORTADA -->
     <br>
+    <!-- INICIO PROGRAMAS -->
 
-    <!-- INICIO DE FILA CON BOTONES QUE LLEVEN A SERVICIOS BRINDADOS...
-    los divs contienen img sacadas de un banco de imagenes gratuito, 
-    unas lineas de texto y le agregue un icono de Bootstrap 
-    (cada div funciona como boton, me gusta mas asi que los botones de Bootstrap) -->
-
-    <div id="programas" class="container-fluid d-flex align-items-center">
+    <div id="programas" class="badge bg-dark text-wrap text-white shadow p-3 mb-5 bg-body rounded">
+        <h2>Nuestros Programas </h2>
+    </div>
+    <div class="container-fluid d-flex align-items-center">
         <div class="row align items-start">
             <div class="col-12 col-sm-4">
                 <a href="#" class="row text-decoration-none">
-                    <div class="col-2 col-sm-12 mb-4">
-                        <img src="img/yoga-g25f9e52a1_1280.jpg" alt="yoga-1280-807" class="img-fluid" width="807"
-                            height="1280">
+                    <div class="col-sm-12 mb-4">
+                        <img src="img/pexels-elina-fairytale-3823076.jpg" alt="yoga" class="img-fluid"
+                            width="807px" height="1280px">
                     </div>
-                    <div class="col-10">
+                    <div class="col-12 col-sm-12 flex-md-column text-center">
                         <h3>• Descubre tu potencial •<br> Programa de 21 dias</h3>
                         <p>Conocete a ti mismo a traves del movimiento y la respiracion consciente</p>
                         <p>Quiero saber mas<i class="bi bi-arrow-right-short"></i></p>
@@ -112,11 +103,11 @@
                 </a>
             </div>
             <div class="col-12 col-sm-4"><a href="#" class="row text-decoration-none">
-                    <div class="col-2 col-sm-12 mb-4">
-                        <img src="img/meditate-7831951_1280.webp" alt="yoga-1280-807" class="img-fluid" width="807"
-                            height="1280">
+                    <div class="col-sm-12 mb-4">
+                        <img src="img/meditate-7831951_1280.webp" alt="meditate" class="img-fluid" width="807px"
+                            height="1280px">
                     </div>
-                    <div class="col-10">
+                    <div class="col-12 col-sm-12 flex-md-column text-center">
                         <h3>• Aprende a meditar •<br> Programa de 11 dias</h3>
                         <p>Embarcate en nuestro programa y construye un nuevo habito para toda la vida</p>
                         <p>Quiero saber mas<i class="bi bi-arrow-right-short"></i></p>
@@ -124,11 +115,11 @@
                 </a>
             </div>
             <div class="col-12 col-sm-4"><a href="#" class="row text-decoration-none">
-                    <div class="col-2 col-sm-12 mb-4">
-                        <img src="img/kick-g25141aac3_1280.jpg" alt="yoga-1280-807" class="img-fluid" width="807"
-                            height="1280">
+                    <div class="col-sm-12 mb-4">
+                        <img src="img/kick-g25141aac3_1280.jpg" alt="martial" class="img-fluid" width="807px"
+                            height="1280px">
                     </div>
-                    <div class="col-10">
+                    <div class="programa-caja-texto col-12 col-sm-12 flex-md-column text-center">
                         <h3>• Mente Sana en Cuerpo Sano •<br> Programa de 60 dias</h3>
                         <p>Conoce las artes marciales integradas al mundo moderno</p>
                         <p>Quiero saber mas<i class="bi bi-arrow-right-short"></i></p>
@@ -138,44 +129,46 @@
         </div>
     </div>
 
-    <!--CONTENIDO, aca hay 3 videos con texto al lado. 
-        mas abajo quiero hacer un carousel que este anchorado con el item Galeria de Arte, 
-        no me dio el tiempo -->
+    <!-- FINAL PROGRAMAS -->
 
+    <!-- INICIO CONTENIDO -->
+    <!-- Hacer Gradient con los background colors-->
     <div id="scroll-down">
-        <section class="steps">
-            <h2 class="contenido__heading fs-1 justify-text-center">Contenido</h2>
+        <section class="contenido">
+            <div id="essay" class="badge bg-dark text-wrap text-white shadow p-3 mb-5 bg-body rounded">
+                <h2>Nuestro Contenido</h2>
+            </div>
             <br>
-            <div id="rinpoche" class="row">
-                <div class="col-12 col-sm-6 d-md-flex justify-content-center">
-                    <iframe width="500" height="315" src="https://www.youtube-nocookie.com/embed/5GSeWdjyr1c"
-                        title="YouTube video player" frameborder="0"
+            <div id="rinpoche" class="row text-white d-flex flex-wrap">
+                <div class="col-12 col-sm-8 d-sm-flex justify-content-center">
+                    <iframe class="contenido__video w-auto h-auto" width="530px" height="330px"
+                        src="https://www.youtube-nocookie.com/embed/5GSeWdjyr1c" title="YouTube video player"
+                        frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                 </div>
-                <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
-                    <div class="step__content-width">
+                <div class="col-12 col-sm-4 align-self-center justify-content-md-center">
+                    <div class="contenido__texto">
                         <h3 class="h3 mb-4">Meditacion guiada por Mingyur Rinpoche</h3>
                         <p>Una meditacion para llevar consciencia a nuestro Cuerpo y el Espacio que nos rodea</p>
-                        <a href="https://www.youtube.com/@MingyurRinpoche/about">Otras meditaciones <i
+                        <a href="https://www.youtube.com/@MingyurRinpoche">Otras meditaciones <i
                                 class="bi bi-arrow-right"></i></a>
                     </div>
-
                 </div>
             </div>
 
         </section>
-        <section class="steps">
+        <section class="contenido">
             <br>
-            <div id="antonio" class="row text-white">
-                <div class="col-12 col-sm-6 d-md-flex justify-content-center order-sm-1">
-                    <iframe width="500" height="315" src="https://www.youtube.com/embed/_1ze_NhyF7g"
-                        title="YouTube video player" frameborder="0"
+            <div id="antonio" class="row text-white d-flex flex-wrap">
+                <div class="col-12 col-sm-8 d-sm-flex justify-content-center">
+                    <iframe class="contenido__video w-auto h-auto" width="530px" height="330px"
+                        src="https://www.youtube.com/embed/_1ze_NhyF7g" title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                 </div>
-                <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
-                    <div class="step__content-width">
+                <div class="col-12 col-sm-4 align-self-center justify-content-md-center">
+                    <div class="contenido__texto">
                         <h3 class="h3 mb-4">Que es el Movimiento? por Antonio Torres</h3>
                         <p>Un ensayo audiovisual sobre el movimiento</p>
                         <a href="https://www.youtube.com/@TheTaoWay">Mas videos <i class="bi bi-arrow-right"></i></a>
@@ -183,59 +176,50 @@
                 </div>
             </div>
         </section>
-        <section class="steps">
+        <section class="contenido">
             <br>
-            <div id="flo" class="row text-white">
-                <div class="col-12 col-sm-6 d-md-flex justify-content-center">
-                    <iframe width="500" height="315" src="https://www.youtube.com/embed/KObUQOsqQKI"
-                        title="YouTube video player" frameborder="0"
+            <div id="flo" class="row text-white d-flex flex-wrap">
+                <div class="col-12 col-sm-8 d-sm-flex justify-content-center">
+                    <iframe class="contenido__video w-auto h-auto" width="530px" height="330px"
+                        src="https://www.youtube.com/embed/KObUQOsqQKI" title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                 </div>
-                <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
-                    <div class="step__content-width">
+                <div class="col-12 col-sm-4 align-self-center justify-content-md-center">
+                    <div class="contenido__texto">
                         <h3 class="h3 mb-4">Practica de Yoga por Flo Niedhammer</h3>
                         <p>Estiramiento profundo para recuperacion de atletas</p>
-                        <a href="https://www.youtube.com/@BreatheAndFlow">Mas practicas como esta <i class="bi bi-arrow-right"></i></a>
+                        <a href="https://www.youtube.com/@BreatheAndFlow">Mas practicas como esta <i
+                                class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </section>
     </div>
+    <!-- FINAL CONTENIDO -->
+    <!-- INICIO FOOTER -->
     <br>
     <section>
-        <h4>Embarcate con nosotros hacia la intimidad del estudio del movimiento y la contemplacion del microcosmos
-            humano.</h4>
-        <p>
-            Buscamos explorar la naturaleza humana desde la expresion corporal y el desarroillo de la fuerza y la
-            destreza fisica. Ahondaremos en la lectura y discusion de filosofia, ciencia y arte como vias de expresion
-            intelectual, emocional y logica.
-        </p>
+        <footer class="footer">
+            <br>
+            <div class="d-flex justify-content-center align-baseline">
+                <a href="https://www.YouTube.com?manifestflow.canal" target="_blank">
+                    <img src="img/icons8-youtube-30.png" alt="Logo de YouTube">
+                </a>
+                <a href="https://www.instagram.com/manifest.flow.mvmt" target="_blank">
+                    <img src="img/icons8-instagram-30.png" alt="Logo de Instagram">
+                </a>
+                <a href="https://www.twitch.com/manifest.flow.podcast" target="_blank">
+                    <img src="img/icons8-twitch-30.png" alt="Logo de Twitch">
+                </a>
+                <a href="https://www.spotify.com/manifest.flow" target="_blank">
+                    <img src="img/icons8-spotify-30.png" alt="Logo de Spotify">
+                </a>
+                </div>
+                <p class="text-center fs-3">2023 - Todos los derechos reservados.</p>
+            
+        </footer>
     </section>
-
-<!-- voy a seguir trabajando en este sitio, hay cosas que quiero hacer y todavia no se como jaja -->
-
-
-    <footer class="footer">
-        <div>
-            <a href="https://www.YouTube.com?manifestflow.canal" target="_blank">
-                <img src="img/icons8-youtube-30.png" alt="Logo de YouTube">
-            </a>
-            <a href="https://www.instagram.com/manifest.flow.mvmt" target="_blank">
-                <img src="img/icons8-instagram-30.png" alt="Logo de Instagram">
-            </a>
-            <a href="https://www.twitch.com/manifest.flow.podcast" target="_blank">
-                <img src="img/icons8-twitch-30.png" alt="Logo de Twitch">
-            </a>
-            <a href="https://www.spotify.com/manifest.flow" target="_blank">
-                <img src="img/icons8-spotify-30.png" alt="Logo de Spotify">
-            </a>
-        </div>
-        <div>
-            <p>2023 - Todos los derechos reservados.</p>
-        </div>
-    </footer>
-
 
 
     <!-- Optional JavaScript -->

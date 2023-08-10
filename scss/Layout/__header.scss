@@ -1,0 +1,30 @@
+a {
+    font-size: 1rem;
+    font-weight: 500;
+
+    &.dropdown-item:hover {
+        background-color: gray;
+    }
+}
+
+.navbar-toggler {
+    z-index: 2;
+}
+
+.navbar-brand {
+    margin-right: 0 10px 0 15px;
+}
+
+a.navbar-brand-title {
+    font-size: 3.6rem;
+    align-self: end;
+    font-weight: 300;
+}
+
+.boton-sesion {
+    margin-right: 50px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.d-flex.row {
+    margin-right:0px!important;
+}
