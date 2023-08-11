@@ -1,0 +1,17 @@
+@media screen and (min-width: 375px) {
+  a.navbar-brand-title {
+    font-size: 1.6rem;
+    align-self: end;
+  }
+}
+
+@media screen and (min-width: 482px) {
+  a.navbar-brand-title {
+    font-size: 2rem;
+    align-self: end;
+  }
+
+  .portada__heading h1 {
+    font-size: 2rem;
+  }
+}

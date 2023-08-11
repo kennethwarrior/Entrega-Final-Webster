@@ -1,62 +1,56 @@
+
 #programas {
-    margin-top: 2rem;
-    padding: 1rem;
-    background-color: var(--bs-secondary);
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--bs-secondary);
 }
 
 a {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 a:hover {
-    color: #8f0f0f;
+  color: #8f0f0f;
 }
 
 a:active {
-    color: goldenrod;
+  color: goldenrod;
 }
 
 .badge {
-    display: block;
-    align-self: center;
-
-    h2 {
-        font-weight: 700;
-        text-align: bottom;
-        padding-top: 10px;
-    }
+  display: block;
+  align-self: center;
+}
+.badge h2 {
+  font-weight: 700;
+  text-align: bottom;
+  padding-top: 10px;
 }
 
 .contenido {
-    position: relative;
-    justify-content: space-between;
-    flex-direction: column;
-
-    .contenido__heading {
-        font-weight: 500;
-        padding-left: 15px;
-    }
-
-    #rinpoche {
-        background-color: rgb(88, 88, 88);
-        padding: 40px;
-        background-image: linear-gradient(to bottom right, rgb(88, 88, 88), rgb(11, 11, 11));
-    }
-
-    #antonio {
-        background-color: rgb(44, 44, 44);
-        padding: 40px;
-        background-image: linear-gradient(to bottom right, rgb(88, 88, 88), rgb(11, 11, 11));
-    }
-
-    #flo {
-        background-color: rgb(22, 22, 22);
-        padding: 40px;
-        background-image: linear-gradient(to bottom right, rgb(88, 88, 88), rgb(11, 11, 11));
-        
-    }
-
-    .row {
-        margin-right: 0;
-      }
+  position: relative;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.contenido .contenido__heading {
+  font-weight: 500;
+  padding-left: 15px;
+}
+.contenido #rinpoche {
+  background-color: rgb(88, 88, 88);
+  padding: 40px;
+  background-image: linear-gradient(to bottom right, rgb(88, 88, 88), rgb(11, 11, 11));
+}
+.contenido #antonio {
+  background-color: rgb(44, 44, 44);
+  padding: 40px;
+  background-image: linear-gradient(to bottom right, rgb(88, 88, 88), rgb(11, 11, 11));
+}
+.contenido #flo {
+  background-color: rgb(22, 22, 22);
+  padding: 40px;
+  background-image: linear-gradient(to bottom right, rgb(88, 88, 88), rgb(11, 11, 11));
+}
+.contenido .row {
+  margin-right: 0;
 }
