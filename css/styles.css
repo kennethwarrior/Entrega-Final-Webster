@@ -45,9 +45,7 @@ a.dropdown-item:hover {
 }
 
 a.navbar-brand-title {
-  font-size: 3.6rem;
-  align-self: end;
-  font-weight: 300;
+  text-shadow:1cap black ;
 }
 
 .boton-sesion {
