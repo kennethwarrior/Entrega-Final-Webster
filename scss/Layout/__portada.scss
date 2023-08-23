@@ -1,86 +1,66 @@
-
-.portada__container {
-    width: 100%;
-    padding: 0 6rem;
-    margin: 0;
-  }
-  
-  @media (min-width: 1200px) {
-    .portada__container {
-      width: 1140px;
-    }
-  }
-  @media (min-width: 1400px) {
-    .portada__container {
-      width: 1340px;
-    }
-  }
-  @media (min-width: 1600px) {
-    .portada__container {
-      width: 1520px;
-    }
-  }
-  @media (min-width: 2300px) {
-    .portada__container {
-      width: 2200px;
-    }
-  }
   .portada {
     position: relative;
     height: 100vh;
     background-color: black;
     overflow: hidden;
+
+    .portada__container {
+      width: 100%;
+      padding: 0 6rem;
+      margin: 0;
+
+      .portada__heading {
+        z-index: 100;
+      }
+    }
   }
-  
-  .portada__video {
-    position: absolute;
-    min-width: 50%;
-    min-height: 50%;
-    width: auto;
-    height: auto;
-    transform: translateX(-25%) translateY(-5%);
-  }
-  
-  .portada__heading {
-    z-index: 100;
-  }
-  .portada__heading h1 {
-    font-size: 400%;
-    font-weight: 500;
-    font-style: italic;
-    font-stretch: expanded;
-  }
-  
-  .portada__overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--dark);
-    opacity: 0.3;
-    z-index: 1;
-  }
-  
-  a.mt-2.btn.btn-lg.btn-outline-dark {
-    z-index: 100;
-  }
-  
-  .portada__scroll-btn {
-    position: absolute;
-    left: 50%;
-    bottom: 30px;
-    transform: translateX(-50%);
-    z-index: 1;
-    color: var(--bs-light);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-  }
-  
-  .portada__scroll-btn:hover {
-    color: var(--bs-dark-emphasis);
-  }
-  
+
+    .portada__video {
+      position: absolute;
+      min-width: 50%;
+      min-height: 50%;
+      width: auto;
+      height: auto;
+      transform: translateX(-25%) translateY(-5%);
+    }
+
+    .portada__overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: var(--dark);
+      opacity: 0.3;
+      z-index: 1;
+    }
+
+    a.mt-2.btn.btn-lg.btn-outline-dark {
+      z-index: 100;
+    }
+
+    .portada__scroll-btn {
+      position: absolute;
+      left: 50%;
+      bottom: 30px;
+      transform: translateX(-50%);
+      z-index: 1;
+      color: var(--bs-light);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+
+    }
+
+    @media screen and (min-width: 375px) {
+      .portada__scroll-btn:hover {
+        display: none;
+      }
+
+    }
+
+    .portada__scroll-btn:hover {
+      color: var(--bs-dark-emphasis);
+    }

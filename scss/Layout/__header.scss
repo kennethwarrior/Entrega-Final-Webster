@@ -1,5 +1,6 @@
-a {
-    font-size: 1rem;
+.header {
+    a {
+    font-size: 1.6rem;
     font-weight: 500;
 
     &.dropdown-item:hover {
@@ -21,4 +22,5 @@ a {
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-light.d-flex.row {
     margin-right:0px!important;
+}
 }
