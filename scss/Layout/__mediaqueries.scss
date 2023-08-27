@@ -1,22 +1,10 @@
-@media (min-width: 375px) {
-  .portada__container {
-    width: 250px;
-    padding: 0 1rem;
-    margin: 0 auto;
-  }
+@media screen and (min-width: 300px) {
+ 
 
-  .portada__heading {
-      font-size: 2.2rem;
-      font-weight: 500;
-      font-style: italic;
-      font-stretch: expanded;
-    }
-
-    a.navbar-brand-title {
-      font-size: 1.6rem;
-      align-self: end;
-    }
+  .portada__heading p {
+    font-size: small;
   }
+}
 
 
   @media (min-width: 480px) {
@@ -32,6 +20,10 @@
       width: 480px;
       padding: 0 1rem;
       margin: 0 auto;
+    }
+
+    .portada__heading p {
+      font-size: medium;
     }
   }
 
@@ -56,6 +48,10 @@
       width: 1140px;
       padding: 0 1rem;
       margin: 0 auto;
+    }
+
+    .portada__heading p {
+      font-size: larger;
     }
   }
 

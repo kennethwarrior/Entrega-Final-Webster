@@ -29,7 +29,7 @@
             <a class="navbar-brand" href="#">
                 <img src="img/brand-logo.png" alt="manifest-logo" width="77px" height="77px">
             </a>
-            <a class="navbar-brand-title d-flex align-self-center" href="#"><strong>El Arte<i> Simple</i></strong></a>
+            <a class="navbar-brand-title d-flex align-self-center" href="#arte-simple"><strong>El Arte<i> Simple</i></strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -60,7 +60,7 @@
 
     <section class="portada">
 
-        <video autoplay muted playsinline loop class="portada__video w-auto">
+        <video id="arte-simple" muted playsinline loop class="portada__video w-auto">
             <source src="img/video (2160p).mp4" type="video/mp4">
         </video>
         <div class="portada__overlay"></div>
@@ -68,14 +68,14 @@
 
             <div class="d-flex h-100 align-items-center portada__content-width">
                 <div class="portada__heading">
-                    <h1 class="portada__title text-light fw-bold mb-4">El Arte
+                    <h1 class="portada__title text-light fw-bold mt-3 mb-3">El Arte
                         Simple</h1>
-                    <p class="text-light lead mb-4">Descubre la naturaleza humana a traves del movimiento y
+                    <p class="text-light lead mb-3">Descubre la naturaleza humana a traves del movimiento y
                         la
                         contemplacion. Aqui encontraras un repertorio de videos, ensayos y documentales que inspiran una
                         vida en contacto estrecho con nuestro cuerpo, la practica consciente de disciplina fisica y
                         mental como via de liberacion.</p>
-                    <a href="#programas" class="mt-2 btn btn-lg btn-outline-light" role="button">
+                    <a href="#programas" class="mt-1 btn btn-lg btn-outline-light" role="button">
                         Comenzar</a>
                 </div>
 
@@ -96,8 +96,10 @@
 
         <div class="badge bg-dark text-wrap text-white shadow p-3 mt-5 mb-5 bg-body rounded">
             <h2>Los Referentes</h2>
-        </div>
-        <div class="wrapper">
+         </div>
+         <p class="text-black text-center fs-5 m-5" >Estas son las personas de las cuales tomo prestado para labrar mi camino en el estudio del movimiento y el Movimiento. Por supuesto que hay mas personas que han influido en mi y mi en capacidad de entendimiento de las diferentes materias que confluyen en el arte simple, el moverse libremente.</p>
+        
+         <div class="wrapper contenido shadow p-3">
             <div class="referentes">
                 <div class="ref-individual">
                     <div class="ref_img">
@@ -156,6 +158,9 @@
     <div id="programas" class="badge bg-dark text-wrap text-white shadow p-3 mb-5 bg-body rounded">
         <h2>Nuestros Programas</h2>
     </div>
+    <p class="text-black text-align-center fs-5 m-5" >Aqui presento tres guias compuestas de diferentes entrenamientos, meditaciones y pensamientos que cooperan en el
+        aprendizaje de nuevas habilidades y el desarrollo de nuevos habitos. Estos te ayudaran a profundizar en la experiencia del momento presente y vivir una vida de plenitud.</p>
+
     <div class="container-fluid d-flex align-items-center">
         <div class="row align items-start">
             <div class="col-12 col-sm-4">
@@ -208,13 +213,13 @@
 
     <!-- INICIO CONTENIDO -->
 
-    <div id="scroll-down">
+    <div id="scroll-down" class="wrapper contenido shadow p-3">
 
         <div class="badge bg-dark text-wrap text-white shadow p-3 mb-5 bg-body rounded">
             <h2>Nuestro Contenido</h2>
         </div>
 
-        <section class="contenido">
+        <section>
             <div id="antonio" class="row text-white d-flex flex-wrap">
                 <div class="col-12 col-sm-8 d-sm-flex justify-content-center">
                     <iframe class="contenido__video w-auto h-auto" width="530px" height="330px"
@@ -273,8 +278,9 @@
         <section class="contenido">
             <div id="shifu" class="row text-white d-flex flex-wrap">
                 <div class="col-12 col-sm-8 d-sm-flex justify-content-center">
-                    <iframe class="contenido__video w-auto h-auto" width="530px" height="330px" src="https://www.youtube.com/embed/t9aNvI1qVJY?si=3USxKxpc1cSV3gcp"
-                        title="YouTube video player" frameborder="0"
+                    <iframe class="contenido__video w-auto h-auto" width="530px" height="330px"
+                        src="https://www.youtube.com/embed/t9aNvI1qVJY?si=3USxKxpc1cSV3gcp" title="YouTube video player"
+                        frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                 </div>

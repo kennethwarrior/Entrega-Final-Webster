@@ -15,69 +15,74 @@
     }
   }
 
-    .portada__video {
-      position: absolute;
-      min-width: 50%;
-      min-height: 50%;
-      width: auto;
-      height: auto;
-      transform: translateX(-25%) translateY(-5%);
+  .portada__heading p {
+    font-size: 1rem;
+  }
+  
+  .portada__video {
+    position: absolute;
+    min-width: 50%;
+    min-height: 50%;
+    width: auto;
+    height: auto;
+    transform: translateX(-25%) translateY(-5%);
+  }
+
+  .portada__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--dark);
+    opacity: 0.3;
+    z-index: 1;
+  }
+   
+  a.mt-2.btn.btn-lg.btn-outline-dark {
+    z-index: 100;
+  }
+
+  .portada__scroll-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+
+    z-index: 1;
+    color: var(--bs-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+
+  }
+
+  .portada__scroll-btn:hover {
+    color: darkred;
+
+    animation: none;
+    transition: none;
+  }
+
+  .portada__scroll-btn .bi {
+    transition-delay: 0.8s;
+    animation: flecha 1s infinite alternate;
+  }
+
+  @keyframes flecha {
+    from {
+      transform: translateY(0px);
     }
 
-    .portada__overlay {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background-color: var(--dark);
-      opacity: 0.3;
-      z-index: 1;
+    to {
+      transform: translateY(-10px);
     }
+  }
 
-    a.mt-2.btn.btn-lg.btn-outline-dark {
-      z-index: 100;
-    }
-
+  @media screen and (max-width: 375px) {
     .portada__scroll-btn {
-      position: absolute;
-      left: 50%;
-      bottom: 30px;
-     
-      z-index: 1;
-      color: var(--bs-light);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-decoration: none;
-
+      display: none;
     }
 
-    @media screen and (min-width: 375px) {
-      .portada__scroll-btn:hover {
-        display: none;
-      }
-
-    }
-
-    .portada__scroll-btn:hover {
-      color:darkred;
-
-      animation: none;
-      transition: none;
-    }
-
-    .portada__scroll-btn .bi {
-      transition-delay: 0.8s;
-      animation: flecha 1s infinite alternate;
-    }
-
-    @keyframes flecha {
-      from {
-        transform: translateY(0px);
-      }
-      to {
-        transform: translateY(-10px);
-      }
-    }
+  }
