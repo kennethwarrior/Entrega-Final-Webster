@@ -1,0 +1,51 @@
+.wrapper {
+    margin-top: 100px;
+}
+
+.referentes {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.referentes .ref-individual {
+    background: #fff;
+    margin: 0 15px 50px 15px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: #8e8b8b;
+    position: relative;
+}
+
+.referentes .ref-individual h3 {
+    color: #1d1d1d;
+    font-size: 26px;
+    margin-top: 50px;
+}
+
+.referentes .ref-individual p.rol {
+    color: #ccc;
+    margin: 12px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.referentes .ref-individual .ref_img {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border:5px #1d1d1d;
+}
+
+.referentes .ref-individual .ref_img img {
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+}

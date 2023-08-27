@@ -44,7 +44,7 @@
       position: absolute;
       left: 50%;
       bottom: 30px;
-      transform: translateX(-50%);
+     
       z-index: 1;
       color: var(--bs-light);
       display: flex;
@@ -62,5 +62,22 @@
     }
 
     .portada__scroll-btn:hover {
-      color: var(--bs-dark-emphasis);
+      color:darkred;
+
+      animation: none;
+      transition: none;
+    }
+
+    .portada__scroll-btn .bi {
+      transition-delay: 0.8s;
+      animation: flecha 1s infinite alternate;
+    }
+
+    @keyframes flecha {
+      from {
+        transform: translateY(0px);
+      }
+      to {
+        transform: translateY(-10px);
+      }
     }
