@@ -5,6 +5,7 @@
   padding: 0;
   margin: 0;
   width: auto;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,6 +15,11 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+.wrapper {
+  margin-top: 3rem;
+  border: solid thick #fff;
 }
 
 @media screen and (min-width: 300px) {
@@ -256,11 +262,6 @@ a:active {
   text-align: bottom;
 }
 
-.wrapper {
-  margin-top: 3rem;
-  border: solid thick #fff;
-}
-
 .referentes {
   display: flex;
   justify-content: center;
@@ -307,6 +308,19 @@ a:active {
   width: 120px;
   height: 120px;
   padding: 5px;
+}
+
+.container__yoga {
+  position: relative;
+  justify-content: space-between;
+  flex-direction: column;
+  background-image: url(/img/connectwork.png);
+}
+
+.img-fluid {
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

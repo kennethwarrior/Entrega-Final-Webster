@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   width: auto;
+  box-sizing: border-box;
 }
 
 body {
@@ -15,4 +16,9 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+.wrapper {
+  margin-top: 3rem;
+  border: solid thick #fff;
 }
